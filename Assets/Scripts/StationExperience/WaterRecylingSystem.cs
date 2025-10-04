@@ -4,7 +4,7 @@ public class WaterRecylingSystem : MonoBehaviour, IInteractable
 {
     public void Interact()
     {
-        Debug.Log("Interacted with Working Table");
+        Debug.Log("Interacted with Water Recycling Machine");
         Dialog dialog = FindDialogInScene();
         if (dialog == null)
         {
@@ -15,7 +15,7 @@ public class WaterRecylingSystem : MonoBehaviour, IInteractable
         dialog.ResetDialog();
         dialog.gameObject.SetActive(true);
         dialog.dialogLines = new string[] {
-            "You found a working table!",
+            "You found a water recycling machine!",
             "You can use this to do experiments.",
             "Press SPACE to continue ..."
         };
