@@ -70,10 +70,10 @@ public class GridData : MonoBehaviour
 
     void Start()
     {
-        if (moduleTilemaps.Count == 0)
-        {
-            Debug.LogError("Module Tilemaps are not assigned.");
-        }
+        // if (moduleTilemaps.Count == 0)
+        // {
+        //     Debug.LogError("Module Tilemaps are not assigned.");
+        // }
     }
 
     // Update is called once per frame
