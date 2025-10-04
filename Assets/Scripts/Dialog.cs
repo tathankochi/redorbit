@@ -38,6 +38,7 @@ public class Dialog : MonoBehaviour
     {
         dialogText.text = "";
         StartCoroutine(TypeLine());
+        Debug.Log(dialogText.text);
     }
     void NextLine()
     {
