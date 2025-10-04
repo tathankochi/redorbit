@@ -7,13 +7,19 @@ public class TrucArcade : MonoBehaviour
     public BeatScroller theBS;
     public static TrucArcade instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         instance = this;
     }
 
+    void OnButtonClicked()
+    {
+        gameObject.SetActive(false);
+    }
+
     // Update is called once per frame
-    void Update()
+        void Update()
     {
         if (!startPlaying)
         {
