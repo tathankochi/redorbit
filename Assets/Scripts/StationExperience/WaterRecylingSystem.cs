@@ -26,7 +26,7 @@ public class WaterRecylingSystem : MonoBehaviour, IInteractable
             Debug.LogError("AddCompletedMission component not found in the scene.");
             return;
         }
-        addCompletedMission.MarkMissionComplete("Interact with the working table");
+        addCompletedMission.MarkMissionComplete("Interact with the WaterRecylingSystem");
         ChecklistManager checklistManager = FindChecklistManagerInScene();
         if (checklistManager == null)
         {
