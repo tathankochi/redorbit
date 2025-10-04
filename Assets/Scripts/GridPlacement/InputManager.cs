@@ -44,12 +44,14 @@ public class InputManager : MonoBehaviour
     public bool IsPointedOverUI() => EventSystem.current.IsPointerOverGameObject();
     public Vector2 GetSelectedMapPosition()
     {
-        Vector2 mousePosition = Mouse.current.position.ReadValue();
-        Ray ray = mainCamera.ScreenPointToRay(mousePosition);
+        Vector3 mouseScreenPosition = Mouse.current.position.ReadValue();
+        Debug.Log("Mouse Position: " + mouseScreenPosition);
+        Ray ray = mainCamera.ScreenPointToRay(mouseScreenPosition);
         if (Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity, placementLayerMask))
         {
-            mousePosition = hitInfo.point;
-            return mousePosition;
+            Debug.Log("Hit Point: " + hitInfo.point);
+            mouseIndicator.transform.position = hitInfo.point;
+            return new Vector2(hitInfo.point.x, hitInfo.point.y);
         }
         return Vector2.zero;
     }
