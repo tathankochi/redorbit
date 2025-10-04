@@ -10,7 +10,7 @@ public class SpriteChanger : MonoBehaviour
     void Start()
     {
         jsonFile = Path.Combine(Application.persistentDataPath, "count.json");
-        JsonFileIO.WriteCountJson(jsonFile, 0);
+        //JsonFileIO.WriteCountJson(jsonFile, 0);
         
         count = JsonFileIO.ReadCountJson(jsonFile); // Đọc count
         Debug.Log(count);
