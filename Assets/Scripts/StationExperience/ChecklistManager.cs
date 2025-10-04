@@ -7,15 +7,16 @@ using System.IO;
 public class ChecklistManager : MonoBehaviour
 {
     [Header("Data Sources")]
-    public MissionData missionData;       
+    public MissionData missionData;
     public string saveFile = "missions.json";
 
     [Header("UI Setup")]
-    public GameObject togglePrefab;       
-    public Transform checklistParent;     
+    public GameObject togglePrefab;
+    public Transform checklistParent;
 
     private MissionProgress progress = new MissionProgress();
     private Dictionary<string, Toggle> missionToggles = new Dictionary<string, Toggle>();
+    public GameObject finishGameButton;
 
     void Awake()
     {
@@ -54,7 +55,7 @@ public class ChecklistManager : MonoBehaviour
             missionToggles[mission] = toggle;
         }
     }
-    
+
     public void RefreshChecklist()
     {
         LoadProgress();
@@ -64,6 +65,25 @@ public class ChecklistManager : MonoBehaviour
             {
                 missionToggles[mission].isOn = progress.completed.Contains(mission);
             }
+        }
+    }
+    public bool IsAllMissionsCompleted()
+    {
+        foreach (string mission in missionData.missionDescriptions)
+        {
+            if (!progress.completed.Contains(mission))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    public void Update()
+    {
+        if (IsAllMissionsCompleted())
+        {
+            Debug.Log("All missions completed!");
+            finishGameButton.SetActive(true);
         }
     }
 }
