@@ -37,7 +37,7 @@ MonoBehaviour:
     <ID>k__BackingField: 5
     <Prefab>k__BackingField: {fileID: 8054084173061757531, guid: 4e77b6518d1bd2a4cae99c1ca41af6fa, type: 3}
     <Size>k__BackingField: {x: 2, y: 2}
-  - <Name>k__BackingField: WaterRecylingSystem
+  - <Name>k__BackingField: DancingArcade
     <ID>k__BackingField: 6
     <Prefab>k__BackingField: {fileID: 4006568770645415191, guid: 9ab9e760ace9b4ad7911869ea994581e, type: 3}
     <Size>k__BackingField: {x: 2, y: 2}
