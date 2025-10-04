@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Arcade : MonoBehaviour, IInteractable
 {
-    public SceneSwitchE sceneSwitch;
+    public SceneSwitch sceneSwitch;
     
     void Start()
     {
@@ -105,10 +105,10 @@ public class Arcade : MonoBehaviour, IInteractable
         return null;
     }
     
-    private SceneSwitchE FindSceneSwitchInScene()
+    private SceneSwitch FindSceneSwitchInScene()
     {
-        SceneSwitchE[] switches = Resources.FindObjectsOfTypeAll<SceneSwitchE>();
-        foreach (SceneSwitchE sceneSwitch in switches)
+        SceneSwitch[] switches = Resources.FindObjectsOfTypeAll<SceneSwitch>();
+        foreach (SceneSwitch sceneSwitch in switches)
         {
             if (sceneSwitch.gameObject.scene.IsValid())
             {
