@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: MissionData
   m_EditorClassIdentifier: 
   missionDescriptions:
-  - Interact with the electrolysis machine
-  - Interact with the working table
-  - Interact with the working table
-  - Interact with the working table
-  - Interact with the working table
-  - Interact with the working table
+  - Interact with the ElectrolysisMachine
+  - Interact with the Locker
+  - Interact with the WaterRecylingSystem
+  - Interact with the Solid Fuel Oxygen Generator
+  - Interact with the Arcade
