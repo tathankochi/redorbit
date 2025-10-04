@@ -97,6 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9098383716172116379}
   - component: {fileID: 5655546096072910911}
+  - component: {fileID: 5403342484398983917}
   m_Layer: 0
   m_Name: ElectrolysisMachine
   m_TagString: Untagged
@@ -166,3 +167,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &5403342484398983917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6457353406237758582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0872eaff7c5fc704e8ccfa8e7951257f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
