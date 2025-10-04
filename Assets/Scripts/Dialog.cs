@@ -36,7 +36,7 @@ public class Dialog : MonoBehaviour
     }
     public void StartDialog()
     {
-        dialogText.text = "The game is controlled by Up/Down/Right/Left arrows";
+        dialogText.text = "";
         StartCoroutine(TypeLine());
         Debug.Log(dialogText.text);
     }
@@ -45,7 +45,7 @@ public class Dialog : MonoBehaviour
         if (currentDialogIndex < dialogLines.Length - 1)
         {
             currentDialogIndex++;
-            dialogText.text = "Time it perfectly for the arrow to match the button and press it";
+            dialogText.text = "";
             StartCoroutine(TypeLine());
         }
         else
