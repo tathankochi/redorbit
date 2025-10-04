@@ -10902,6 +10902,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2137642830074815480, guid: aeadc3da2b89d4f5a8f7c9042fa481dc, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137642830074815480, guid: aeadc3da2b89d4f5a8f7c9042fa481dc, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137642830074815480, guid: aeadc3da2b89d4f5a8f7c9042fa481dc, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4057198114793892642, guid: aeadc3da2b89d4f5a8f7c9042fa481dc, type: 3}
       propertyPath: m_SizeDelta.x
       value: 817.7009
@@ -10976,23 +10988,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7172933074243099026, guid: aeadc3da2b89d4f5a8f7c9042fa481dc, type: 3}
       propertyPath: dialogLines.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7172933074243099026, guid: aeadc3da2b89d4f5a8f7c9042fa481dc, type: 3}
       propertyPath: 'dialogLines.Array.data[0]'
-      value: aaaaaaaaaaaaaaaa
+      value: Timing it perfectly and press the arrow keys
       objectReference: {fileID: 0}
     - target: {fileID: 7172933074243099026, guid: aeadc3da2b89d4f5a8f7c9042fa481dc, type: 3}
       propertyPath: 'dialogLines.Array.data[1]'
-      value: bbbbbbbbbbbbbbbbbbbbd
+      value: Good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 7172933074243099026, guid: aeadc3da2b89d4f5a8f7c9042fa481dc, type: 3}
       propertyPath: 'dialogLines.Array.data[2]'
-      value: Good luck!
+      value: Press SPACE to continue
       objectReference: {fileID: 0}
     - target: {fileID: 7216135873685505678, guid: aeadc3da2b89d4f5a8f7c9042fa481dc, type: 3}
       propertyPath: m_text
-      value: something1
+      value: Welcome to the Rhythm game
       objectReference: {fileID: 0}
     - target: {fileID: 7216135873685505678, guid: aeadc3da2b89d4f5a8f7c9042fa481dc, type: 3}
       propertyPath: m_fontSize
