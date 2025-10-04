@@ -17,10 +17,10 @@ MonoBehaviour:
     <ID>k__BackingField: 0
     <Prefab>k__BackingField: {fileID: 7949150177776615451, guid: e0b24a8ecd89546af95d8e7f5b18ff7b, type: 3}
     <Size>k__BackingField: {x: 1, y: 2}
-  - <Name>k__BackingField: 
-    <ID>k__BackingField: 0
-    <Prefab>k__BackingField: {fileID: 0}
-    <Size>k__BackingField: {x: 0, y: 0}
+  - <Name>k__BackingField: Veggie
+    <ID>k__BackingField: 1
+    <Prefab>k__BackingField: {fileID: 5558094002044303343, guid: fb971f688072947f78077974f721778a, type: 3}
+    <Size>k__BackingField: {x: 2, y: 2}
   - <Name>k__BackingField: 
     <ID>k__BackingField: 0
     <Prefab>k__BackingField: {fileID: 0}
