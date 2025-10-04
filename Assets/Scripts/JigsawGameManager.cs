@@ -181,12 +181,12 @@ public class JigsawGameManager : MonoBehaviour {
     {
         if(Input.GetMouseButtonDown(0))
         {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWWorldPoint(Input.mousePosition), Vector2.zero);
+            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit)
             {
                 //Everything is moveable, so we don't need to check it's a Piece
                 draggingPiece = hit.transform;
-                offset = draggingPiece.position - Camera.main.ScreenToWorldPoint(Input.mousePosition;
+                offset = draggingPiece.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 offset += Vector3.back;
            }
        }
