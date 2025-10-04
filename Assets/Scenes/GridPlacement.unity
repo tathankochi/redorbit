@@ -4973,7 +4973,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 30
+  orthographic size: 31.7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5949,7 +5949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &406833344
 Transform:
   m_ObjectHideFlags: 0
@@ -6740,9 +6740,9 @@ Transform:
   m_GameObject: {fileID: 512836446}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.5, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 31132720}
   m_Father: {fileID: 907419837}
@@ -8413,7 +8413,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 18, y: 18, z: 18}
+  m_LocalScale: {x: 14, y: 14, z: 14}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -9700,7 +9700,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 717826791}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 825329884}
+        m_TargetAssemblyTypeName: PlacementSystem, Assembly-CSharp
+        m_MethodName: StartPlacement
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &717826791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11305,8 +11317,8 @@ MonoBehaviour:
   mouseIndicator: {fileID: 2074162448}
   grid: {fileID: 1083340168}
   objectDatabase: {fileID: 11400000, guid: 90b6923de2ae140d6aaadb6edc1aef4b, type: 2}
-  gridVisualization: {fileID: 0}
-  funitureData: {fileID: 0}
+  gridVisualization: {fileID: 670572885}
+  funitureData: {fileID: 594253719}
   preview: {fileID: 763242263}
 --- !u!1 &833552438
 GameObject:
