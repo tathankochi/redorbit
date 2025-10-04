@@ -1,10 +1,9 @@
+using System;
 using System.Collections.Generic;
-using System.Data.Common;
 using UnityEngine;
 
 public class PlacementSystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField]
     private InputManager inputManager;
     [SerializeField]
@@ -14,20 +13,24 @@ public class PlacementSystem : MonoBehaviour
     [SerializeField]
     private ObjectDatabaseSO objectDatabase;
     private int selectedObjectIndex = -1;
-    public GameObject gridVisualization;
-    public GridData furnitureData;
+    [SerializeField]
+    private GameObject gridVisualization;
+    [SerializeField]
+    private GridData funitureData;
     private Renderer previewRenderer;
     private List<GameObject> placedObjects = new();
     [SerializeField]
     private PreviewSystem preview;
+
     void Start()
     {
         StopPlacement();
         previewRenderer = cellIndicator.GetComponentInChildren<Renderer>();
     }
+
     private void StopPlacement()
     {
-        gridVisualization.SetActive(false);
+        // gridVisualization.SetActive(false);
         preview.StopShowingPlacementPreview();
         inputManager.OnClicked -= PlaceStructure;
         inputManager.OnExit -= StopPlacement;
@@ -43,7 +46,7 @@ public class PlacementSystem : MonoBehaviour
         }
         else
         {
-            Debug.Log("Starting placement for object " + objectDatabase.objectsData[selectedObjectIndex].Name);
+            Debug.Log("Starting placement for object: " + objectDatabase.objectsData[selectedObjectIndex].Name);
         }
         gridVisualization.SetActive(true);
         preview.StartShowingPlacementPreview(objectDatabase.objectsData[selectedObjectIndex].Prefab,
@@ -51,11 +54,12 @@ public class PlacementSystem : MonoBehaviour
         inputManager.OnClicked += PlaceStructure;
         inputManager.OnExit += StopPlacement;
     }
+
     private void PlaceStructure()
     {
-        if (inputManager.IsPointedOverUI())
+        if (inputManager.IsPointerOverUI())
         {
-            Debug.Log("Clicked on UI, ignoring placement.");
+            // Debug.Log("Pointer is over UI, not placing structure.");
             return;
         }
         Vector2 mousePosition = inputManager.GetSelectedMapPosition();
@@ -63,27 +67,26 @@ public class PlacementSystem : MonoBehaviour
 
         bool PlacementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
         if (!PlacementValidity) return;
+
         GameObject newObject = Instantiate(objectDatabase.objectsData[selectedObjectIndex].Prefab);
-        Debug.Log("Placing object at grid position " + gridPosition);
+        Debug.Log("Placing object at " + gridPosition);
         newObject.transform.position = grid.GetCellCenterWorld(gridPosition);
         placedObjects.Add(newObject);
-        furnitureData.AddObjectAt(gridPosition,
-            objectDatabase.objectsData[selectedObjectIndex].Size,
-            objectDatabase.objectsData[selectedObjectIndex].ID,
-            placedObjects.Count - 1);
+        funitureData.AddObjectAt(gridPosition, objectDatabase.objectsData[selectedObjectIndex].Size,
+            objectDatabase.objectsData[selectedObjectIndex].ID, placedObjects.Count - 1);
         preview.UpdatePosition(grid.GetCellCenterWorld(gridPosition), false);
-    }
-    private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
-    {
-        GridData gridData = furnitureData;
-        return !gridData.IsPositionOccupied(gridPosition,
-            objectDatabase.objectsData[selectedObjectIndex].Size);
+
     }
 
-    // Update is called once per frame
+    private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
+    {
+        GridData gridData = funitureData;
+        return !gridData.IsPositionOccupied(gridPosition, objectDatabase.objectsData[selectedObjectIndex].Size);
+    }
+
     void Update()
     {
-        if (selectedObjectIndex < 0) return;
+        // if (selectedObjectIndex < 0) return;
         Vector2 mousePosition = inputManager.GetSelectedMapPosition();
         mouseIndicator.transform.position = (Vector3)mousePosition;
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
@@ -93,5 +96,6 @@ public class PlacementSystem : MonoBehaviour
 
         cellIndicator.transform.position = grid.GetCellCenterWorld(gridPosition);
         cellIndicator.SetActive(true);
+
     }
 }
