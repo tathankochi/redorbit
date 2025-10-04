@@ -12,4 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2ab0f7df1515430d9f6c95497b0ec14, type: 3}
   m_Name: Database
   m_EditorClassIdentifier: 
-  objectsData: []
+  objectsData:
+  - <Name>k__BackingField: Computer
+    <ID>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 7949150177776615451, guid: e0b24a8ecd89546af95d8e7f5b18ff7b, type: 3}
+    <Size>k__BackingField: {x: 1, y: 2}
+  - <Name>k__BackingField: 
+    <ID>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 0}
+    <Size>k__BackingField: {x: 0, y: 0}
+  - <Name>k__BackingField: 
+    <ID>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 0}
+    <Size>k__BackingField: {x: 0, y: 0}
+  - <Name>k__BackingField: 
+    <ID>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 0}
+    <Size>k__BackingField: {x: 0, y: 0}
