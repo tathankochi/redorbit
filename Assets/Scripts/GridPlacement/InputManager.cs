@@ -1,12 +1,9 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using System;
 using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
-
 public class InputManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField]
     private Camera mainCamera;
     [SerializeField]
@@ -18,7 +15,6 @@ public class InputManager : MonoBehaviour
         mainCamera = Camera.main;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
@@ -32,17 +28,20 @@ public class InputManager : MonoBehaviour
             OnExit?.Invoke();
         }
     }
-    public bool IsPointedOverUI() => EventSystem.current.IsPointerOverGameObject();
+    public bool IsPointerOverUI()
+        => EventSystem.current.IsPointerOverGameObject();
     public Vector2 GetSelectedMapPosition()
     {
         Vector2 mousePosition = Mouse.current.position.ReadValue();
+        Debug.Log("Mouse Position: " + mousePosition);
         Ray ray = mainCamera.ScreenPointToRay(mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity, placementLayerMask))
         {
             mousePosition = hitInfo.point;
             return mousePosition;
         }
+
         return Vector2.zero;
+        // return mousePosition;
     }
 }
-
