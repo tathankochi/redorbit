@@ -1,10 +1,13 @@
+using System;
+using TMPro;
 using UnityEngine;
 
 public class PreviewSystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public GameObject previewObject;
-    public GameObject cellIndicator;
+    [SerializeField]
+    private GameObject cellIndicator;
+    private GameObject previewObject;
+    
     private Color defaultColor = new Color(1, 1, 1, 0.5f);
     private Color invalidColor = Color.red;
     private Color validColor;
@@ -25,16 +28,18 @@ public class PreviewSystem : MonoBehaviour
         PrepareCursor(size);
         cellIndicator.SetActive(true);
     }
+
     private void PreparePreview(GameObject gameObject)
     {
-        // get color of the sprite renderer in children
+        // get all sprite renderers in the preview object and change their color
         SpriteRenderer[] spriteRenderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
+        // Debug.Log("Found " + spriteRenderers.Length + " sprite renderers in preview object.");
         foreach (var spriteRenderer in spriteRenderers)
         {
-            spriteRenderer.color = defaultColor;
+            spriteRenderer.color = validColor;
         }
-
     }
+
     private void PrepareCursor(Vector2Int size)
     {
         if (size.x > 0 || size.y > 0)
@@ -56,9 +61,37 @@ public class PreviewSystem : MonoBehaviour
     }
     public void UpdatePosition(Vector3 position, bool validity)
     {
-        
+        // Debug.Log("Updating preview position to: " + position + " with validity: " + validity);
+        MovePreview(position);
+        MoveCursor(position);
+        ApplyFeedback(validity);
     }
-    // Update is called once per frame
+
+    private void ApplyFeedback(bool validity)
+    {
+        if (validity)
+        {
+            validColor = defaultColor;
+            PreparePreview(previewObject);
+        }
+        else
+        {
+            // Debug.Log("Invalid placement position");
+            validColor = invalidColor;
+            PreparePreview(previewObject);
+        }
+    }
+
+    private void MoveCursor(Vector3 position)
+    {
+        cellIndicator.transform.position = position;
+    }
+
+    private void MovePreview(Vector3 position)
+    {
+        previewObject.transform.position = position;
+    }
+
     void Update()
     {
         
