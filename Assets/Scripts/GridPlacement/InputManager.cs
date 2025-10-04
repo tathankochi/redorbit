@@ -33,7 +33,7 @@ public class InputManager : MonoBehaviour
     public Vector2 GetSelectedMapPosition()
     {
         Vector2 mousePosition = Mouse.current.position.ReadValue();
-        Debug.Log("Mouse Position: " + mousePosition);
+        // Debug.Log("Mouse Position: " + mousePosition);
         Ray ray = mainCamera.ScreenPointToRay(mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity, placementLayerMask))
         {
