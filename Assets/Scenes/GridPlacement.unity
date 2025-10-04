@@ -1925,10 +1925,10 @@ RectTransform:
   - {fileID: 1039831985}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -1355}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &677380353
 MonoBehaviour:
@@ -1973,7 +1973,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 677380354}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 825329884}
+        m_TargetAssemblyTypeName: PlacementSystem, Assembly-CSharp
+        m_MethodName: StartPlacement
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &677380354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2122,10 +2134,10 @@ RectTransform:
   - {fileID: 2084114907}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -95}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717826790
 MonoBehaviour:
@@ -2256,10 +2268,10 @@ RectTransform:
   - {fileID: 1978180127}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -1985}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &727627558
 MonoBehaviour:
@@ -3004,10 +3016,10 @@ RectTransform:
   - {fileID: 1769172637}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -2405}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1044886459
 MonoBehaviour:
@@ -3434,10 +3446,10 @@ RectTransform:
   - {fileID: 1981301765}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -515}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092540943
 MonoBehaviour:
@@ -3482,7 +3494,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1092540944}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 825329884}
+        m_TargetAssemblyTypeName: PlacementSystem, Assembly-CSharp
+        m_MethodName: StartPlacement
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1092540944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3887,10 +3911,10 @@ RectTransform:
   - {fileID: 1239008170}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -305}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1262511119
 MonoBehaviour:
@@ -4399,10 +4423,10 @@ RectTransform:
   - {fileID: 1310454743}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -935}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415071089
 MonoBehaviour:
@@ -4447,7 +4471,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1415071090}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 825329884}
+        m_TargetAssemblyTypeName: PlacementSystem, Assembly-CSharp
+        m_MethodName: StartPlacement
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1415071090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4521,10 +4557,10 @@ RectTransform:
   - {fileID: 568048980}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -1565}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415698708
 MonoBehaviour:
@@ -4915,9 +4951,9 @@ RectTransform:
   m_Father: {fileID: 2142956530}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1449277949
 MonoBehaviour:
@@ -5308,8 +5344,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1692641773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6284741}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5386,10 +5422,10 @@ RectTransform:
   - {fileID: 290042840}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -725}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1618810459
 MonoBehaviour:
@@ -5434,7 +5470,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1618810460}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 825329884}
+        m_TargetAssemblyTypeName: PlacementSystem, Assembly-CSharp
+        m_MethodName: StartPlacement
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1618810460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5691,10 +5739,10 @@ RectTransform:
   - {fileID: 1922299305}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -1145}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725194253
 MonoBehaviour:
@@ -5739,7 +5787,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1725194254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 825329884}
+        m_TargetAssemblyTypeName: PlacementSystem, Assembly-CSharp
+        m_MethodName: StartPlacement
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1725194254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6443,10 +6503,10 @@ RectTransform:
   - {fileID: 1442108823}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -2195}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1991318796
 MonoBehaviour:
@@ -7033,7 +7093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2142956530
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7158,10 +7218,10 @@ RectTransform:
   - {fileID: 1434035721}
   m_Father: {fileID: 1658934205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 101.5, y: -1775}
-  m_SizeDelta: {x: 130, y: 130}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2145571358
 MonoBehaviour:
@@ -7442,7 +7502,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1813952532921452521, guid: aca45eb9bf1f2471fafde73cd3514aa8, type: 3}
       propertyPath: m_Name
-      value: Tilemap_Module4
+      value: Tilemap_Module 4
       objectReference: {fileID: 0}
     - target: {fileID: 2689781383918594412, guid: aca45eb9bf1f2471fafde73cd3514aa8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8600,7 +8660,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6593728940980625511, guid: 7be8c631daea3493a85e2956965b4558, type: 3}
       propertyPath: m_Name
-      value: Tilemap_Module9
+      value: Tilemap_Module 9
       objectReference: {fileID: 0}
     - target: {fileID: 9172966255726795713, guid: 7be8c631daea3493a85e2956965b4558, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8756,7 +8816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7617513345835895799, guid: 15bdd0dd6647347c4bd0be84edee154d, type: 3}
       propertyPath: m_Name
-      value: Tilemap_Module3
+      value: Tilemap_Module 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9817,7 +9877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5187552142099340070, guid: 3776c7decfdf94b5ab012dcc17a90ec5, type: 3}
       propertyPath: m_Name
-      value: Tilemap_Module2
+      value: Tilemap_Module 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9913,7 +9973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4671000197089606172, guid: 557c62a836daf42ef9ef98431a3d35ac, type: 3}
       propertyPath: m_Name
-      value: Tilemap_Module8
+      value: Tilemap_Module 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12055,7 +12115,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1594586118106083475, guid: 29ce85e65ea974b57a711f5eaaae3ebc, type: 3}
       propertyPath: m_Name
-      value: Tilemap_Module7
+      value: Tilemap_Module 7
       objectReference: {fileID: 0}
     - target: {fileID: 3159676243804829796, guid: 29ce85e65ea974b57a711f5eaaae3ebc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12270,7 +12330,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3183145478521536066, guid: b6e119d5364694e9da6a666a567bd422, type: 3}
       propertyPath: m_Name
-      value: Tilemap_Module5
+      value: Tilemap_Module 5
       objectReference: {fileID: 0}
     - target: {fileID: 7163966389781949347, guid: b6e119d5364694e9da6a666a567bd422, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12727,7 +12787,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4000730519598845260, guid: eb24fab6c85e54256b321d84a5553324, type: 3}
       propertyPath: m_Name
-      value: Tilemap_Module6
+      value: Tilemap_Module 6
       objectReference: {fileID: 0}
     - target: {fileID: 5614453662227066721, guid: eb24fab6c85e54256b321d84a5553324, type: 3}
       propertyPath: m_LocalPosition.x
