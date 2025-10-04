@@ -26,7 +26,7 @@ public class TrucArcade : MonoBehaviour
         }
     }
 
-    
+
 
     void OnButtonClicked()
     {
@@ -34,9 +34,9 @@ public class TrucArcade : MonoBehaviour
     }
 
     // Update is called once per frame
-        void Update()
+    void Update()
     {
-        
+
     }
 
     public void NoteHit()

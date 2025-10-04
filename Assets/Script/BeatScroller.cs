@@ -15,6 +15,7 @@ public class BeatScroller : MonoBehaviour
     {
         if (hasStarted)
         {
+            Invoke("stop", 36.0f);
             transform.position -= new Vector3(0f, beatTempo * Time.deltaTime, 0f);
         }
     }
@@ -22,5 +23,10 @@ public class BeatScroller : MonoBehaviour
     public void start()
     {
         hasStarted = true;
+    }
+
+    public void stop()
+    {
+        hasStarted = false;
     }
 }
