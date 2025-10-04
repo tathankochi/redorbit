@@ -258,63 +258,72 @@ public class JigsawGameManager : MonoBehaviour
                 if (puzzleIndex == 0)
                 {
                     dialog.dialogLines = new string[] {
-        "Đây là Laika – chú chó đầu tiên được Liên Xô đưa vào quỹ đạo Trái Đất năm 1957.",
-        "Mặc dù Laika không thể sống sót trở về, nhưng sứ mệnh đã mở đường cho các chuyến bay có người lái sau này.",
-        "Câu chuyện của Laika nhắc nhở chúng ta về những hy sinh trong buổi đầu thám hiểm vũ trụ."
+       "This is Laika – the first dog sent into Earth's orbit by the Soviet Union in 1957.",
+"Although Laika did not survive the mission, it paved the way for future human spaceflights.",
+"Laika’s story reminds us of the sacrifices made in the early days of space exploration."
+
     };
                     dialog.StartDialog();
                 }
                 else if (puzzleIndex == 1)
                 {
                     dialog.dialogLines = new string[] {
-        "Đây là 'astronaut ice cream' – loại kem khô được phát triển cho NASA vào thập niên 1960.",
-        "Thực ra phi hành gia ngoài vũ trụ hiếm khi ăn món này, vì nó dễ vụn ra và gây nguy hiểm trong môi trường không trọng lực.",
-        "Ngày nay, nó chủ yếu được bán trong bảo tàng và cửa hàng lưu niệm như một kỷ niệm độc đáo."
+        "GLE will deliver cargo, equipment, and supplies for Moon and Mars missions.",
+"These logistics flights keep Gateway stocked and extend astronaut stays.",
+"The contract allows flexible payload deliveries and future upgrades.",
+"Dragon XL is one of the providers for Gateway logistics."
+
     };
                     dialog.StartDialog();
                 }
                 else if (puzzleIndex == 2)
                 {
                     dialog.dialogLines = new string[] {
-        "Đây là bộ đồ phi hành gia thế hệ mới – được NASA thiết kế cho chương trình Artemis.",
-        "So với những bộ cũ, nó linh hoạt hơn, nhẹ hơn và giúp phi hành gia dễ dàng cúi, ngồi và di chuyển.",
-        "Bộ đồ này còn có khả năng chống bụi Mặt Trăng tốt hơn và được tối ưu cho các sứ mệnh tới sao Hỏa trong tương lai."
+      "VIPER will land at the Moon’s South Pole in 2024 for a 100-day mission.",
+"It will search for ice, minerals, and other resources in shadowed regions.",
+"The rover has three instruments and a one-meter drill to study lunar soil.",
+"VIPER’s data will reveal how lunar water formed and how it can support future exploration."
+
     };
                     dialog.StartDialog();
                 }
                 else if (puzzleIndex == 3)
                 {
                     dialog.dialogLines = new string[] {
-        "Đây là hình ảnh bề mặt sao Hỏa – hành tinh đỏ trong Hệ Mặt Trời.",
-        "Nhiều tàu thăm dò như Perseverance Rover đang tìm dấu hiệu của sự sống cổ xưa trên hành tinh này.",
-        "Sao Hỏa cũng là mục tiêu chính cho các sứ mệnh có người lái trong vài thập kỷ tới."
+       "EGS builds and operates the ground systems for SLS and Orion.",
+"It handles vehicle integration in the VAB and stacking on the Mobile Launcher.",
+"The crawler moves the rocket to Launch Pad 39B for testing and launch.",
+"Future upgrades like ML2 will support larger SLS Block 1B missions."
+
     };
                     dialog.StartDialog();
                 }
                 else if (puzzleIndex == 4)
                 {
                     dialog.dialogLines = new string[] {
-        "Đây là ảnh tàn dư siêu tân tinh Cassiopeia A – chụp bởi Kính viễn vọng Chandra X-ray.",
-        "Cassiopeia A là kết quả của một ngôi sao khổng lồ nổ tung cách Trái Đất khoảng 11.000 năm ánh sáng.",
-        "Nghiên cứu siêu tân tinh giúp các nhà khoa học hiểu cách các nguyên tố nặng được tạo ra trong vũ trụ."
+        "This is the xEVA System – it allows astronauts to work outside the spacecraft.",
+"It supports exploration, research, construction, repair, and maintenance on the Moon and in orbit.",
+"The system includes the EVA suit, tools, and vehicle interface equipment.",
+"Robots and rovers can assist astronauts during these missions.",
+"Axiom Space and Collins Aerospace were selected to build the next generation of spacesuits."
+
     };
                     dialog.StartDialog();
                 }
                 else if (puzzleIndex == 5)
                 {
                     dialog.dialogLines = new string[] {
-        "Đây là hình minh họa hố đen vũ trụ – một trong những vật thể bí ẩn nhất.",
-        "Trường hấp dẫn của hố đen mạnh đến mức ngay cả ánh sáng cũng không thể thoát ra.",
-        "Hố đen đóng vai trò quan trọng trong việc định hình thiên hà và tạo ra những hiện tượng năng lượng cực lớn."
-    };
+       "HLS will carry astronauts, cargo, and supplies from lunar orbit to the surface.",
+"It provides living space, resources, and support for lunar surface activities.",
+"Astronauts can perform EVAs and use equipment both inside and outside the lander.",
+"The exact design depends on the commercial provider’s approach."
+                    };
                     dialog.StartDialog();
                 }
                 else if (puzzleIndex == 6)
                 {
                     dialog.dialogLines = new string[] {
-        "Đây là Trạm Vũ trụ Quốc tế (ISS) – dự án hợp tác của nhiều quốc gia, hoạt động từ năm 2000.",
-        "ISS bay quanh Trái Đất khoảng 16 lần mỗi ngày, cho phép các phi hành gia nghiên cứu trong môi trường vi trọng lực.",
-        "Đây cũng là phòng thí nghiệm không gian lớn nhất từng được xây dựng, biểu tượng cho sự hợp tác quốc tế."
+      
     };
                     dialog.StartDialog();
                 }
