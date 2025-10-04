@@ -40,6 +40,7 @@ public class Starter : MonoBehaviour
 
         foreach (var item in data.items)
         {
+            Debug.Log("Loading item: " + item.prefabName + " at position: " + item.position);
             // Find the prefab by name
             GameObject prefab = FindPrefabByName(item.prefabName);
             if (prefab == null)
@@ -82,7 +83,7 @@ public class Starter : MonoBehaviour
             // Assign the tilemap to the module's tilemap if it has the same name
             // find list of modules in the scene
 
-            // Debug.Log("Instantiated " + item.prefabName + " at " + item.position);
+            Debug.Log("Instantiated " + item.prefabName + " at " + item.position);
         }
     }
 

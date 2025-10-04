@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 5655546096072910911}
   m_Layer: 0
   m_Name: ElectrolysisMachine
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
