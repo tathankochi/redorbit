@@ -7,10 +7,27 @@ public class TrucArcade : MonoBehaviour
     public BeatScroller theBS;
     public static TrucArcade instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-    void Start()
+    public void StartGame()
     {
-        instance = this;
+        if (!startPlaying)
+        {
+            startPlaying = true;
+            theBS.hasStarted = true;
+
+            if (theMusic != null)
+            {
+                theMusic.Play();
+            }
+            else
+            {
+                Debug.LogError("theMusic is not assigned in the Inspector!");
+            }
+        }
+    }
+
+    public void Start()
+    {
+        
     }
 
     void OnButtonClicked()
@@ -21,16 +38,7 @@ public class TrucArcade : MonoBehaviour
     // Update is called once per frame
         void Update()
     {
-        if (!startPlaying)
-        {
-            if (Input.anyKeyDown)
-            {
-                startPlaying = true;
-                theBS.hasStarted = true;
-
-                theMusic.Play();
-            }
-        }
+        
     }
 
     public void NoteHit()
