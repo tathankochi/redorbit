@@ -5,10 +5,11 @@ public class TrucArcade : MonoBehaviour
     public AudioSource theMusic;
     public bool startPlaying;
     public BeatScroller theBS;
+    public static TrucArcade instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        instance = this;
     }
 
     // Update is called once per frame
@@ -24,5 +25,14 @@ public class TrucArcade : MonoBehaviour
                 theMusic.Play();
             }
         }
+    }
+
+    public void NoteHit()
+    {
+        Debug.Log("Hit On Time!");
+    }
+    public void NoteMissed()
+    {
+        Debug.Log("Missed Note!");
     }
 }
