@@ -26,8 +26,6 @@ public class TrucArcade : MonoBehaviour
         }
     }
 
-    
-
     void OnButtonClicked()
     {
         gameObject.SetActive(false);
