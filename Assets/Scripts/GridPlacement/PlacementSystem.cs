@@ -86,7 +86,7 @@ public class PlacementSystem : MonoBehaviour
 
     void Update()
     {
-        // if (selectedObjectIndex < 0) return;
+        if (selectedObjectIndex < 0) return;
         Vector2 mousePosition = inputManager.GetSelectedMapPosition();
         mouseIndicator.transform.position = (Vector3)mousePosition;
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
