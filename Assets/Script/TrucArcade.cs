@@ -6,6 +6,7 @@ public class TrucArcade : MonoBehaviour
     public bool startPlaying;
     public BeatScroller theBS;
     public static TrucArcade instance;
+    public Dialog dialog;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void StartGame()
     {
@@ -25,10 +26,7 @@ public class TrucArcade : MonoBehaviour
         }
     }
 
-    public void Start()
-    {
-        
-    }
+    
 
     void OnButtonClicked()
     {
