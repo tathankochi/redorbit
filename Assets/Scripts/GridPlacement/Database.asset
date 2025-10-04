@@ -21,11 +21,23 @@ MonoBehaviour:
     <ID>k__BackingField: 1
     <Prefab>k__BackingField: {fileID: 5558094002044303343, guid: fb971f688072947f78077974f721778a, type: 3}
     <Size>k__BackingField: {x: 2, y: 2}
-  - <Name>k__BackingField: 
-    <ID>k__BackingField: 0
-    <Prefab>k__BackingField: {fileID: 0}
-    <Size>k__BackingField: {x: 0, y: 0}
-  - <Name>k__BackingField: 
-    <ID>k__BackingField: 0
-    <Prefab>k__BackingField: {fileID: 0}
-    <Size>k__BackingField: {x: 0, y: 0}
+  - <Name>k__BackingField: ElectrolysisMachine
+    <ID>k__BackingField: 2
+    <Prefab>k__BackingField: {fileID: 6457353406237758582, guid: 3143763c4040ebe479be4e4a429b5fa2, type: 3}
+    <Size>k__BackingField: {x: 2, y: 2}
+  - <Name>k__BackingField: Locker
+    <ID>k__BackingField: 3
+    <Prefab>k__BackingField: {fileID: 7649776722166091597, guid: 98d6c5c7f1d180e44b389be1c86426eb, type: 3}
+    <Size>k__BackingField: {x: 2, y: 2}
+  - <Name>k__BackingField: Solid Fuel Oxygen Generator
+    <ID>k__BackingField: 4
+    <Prefab>k__BackingField: {fileID: 5028507753404275132, guid: 505a7ff2a1fe6b844a2be7eaecb02eb2, type: 3}
+    <Size>k__BackingField: {x: 2, y: 2}
+  - <Name>k__BackingField: WaterRecylingSystem
+    <ID>k__BackingField: 5
+    <Prefab>k__BackingField: {fileID: 8054084173061757531, guid: 4e77b6518d1bd2a4cae99c1ca41af6fa, type: 3}
+    <Size>k__BackingField: {x: 2, y: 2}
+  - <Name>k__BackingField: DancingArcade
+    <ID>k__BackingField: 6
+    <Prefab>k__BackingField: {fileID: 4006568770645415191, guid: 9ab9e760ace9b4ad7911869ea994581e, type: 3}
+    <Size>k__BackingField: {x: 2, y: 2}
