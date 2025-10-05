@@ -1176,16 +1176,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256de86190f2a5446abfd0a616c23ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficulty: 4
+  difficulty: 2
   gameHolder: {fileID: 32231508}
   piecePrefab: {fileID: 3412717752596280063, guid: 9aa038bd1ff15004d98999c795f8a787, type: 3}
   imageTextures:
   - {fileID: 2800000, guid: 5611611f03f62f140a11114c97b75fe8, type: 3}
-  - {fileID: 2800000, guid: 46aab77b4c70d3747956d5a02294bcd6, type: 3}
-  - {fileID: 2800000, guid: bb2bf6430c786634a9df356fe70db1ec, type: 3}
-  - {fileID: 2800000, guid: a091cb50dd201da43bc3f00a9a5c0424, type: 3}
-  - {fileID: 2800000, guid: 5431ad54420d653478bb9f981acb5c94, type: 3}
-  - {fileID: 2800000, guid: d89bbce4a3e72144ca17e9ecf6167822, type: 3}
+  - {fileID: 2800000, guid: 3db980007a315f945ad223a636126221, type: 3}
+  - {fileID: 2800000, guid: eb109a5478751a04e97e9f6ba6a96b1d, type: 3}
+  - {fileID: 2800000, guid: fb1358dca2b936d41bf2ce2c04d6cafb, type: 3}
+  - {fileID: 2800000, guid: 6b85d5717cac28245aa8ba000189921e, type: 3}
+  - {fileID: 2800000, guid: 662af7961f916b841a30acf75fd3b524, type: 3}
   levelSelectPanel: {fileID: 1522115380}
   levelSelectPrefab: {fileID: 865524719579905218, guid: 2abcfdaf16c82d240b051400deac0169, type: 3}
   playAgainButton: {fileID: 41008409}
