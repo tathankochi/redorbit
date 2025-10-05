@@ -38,7 +38,7 @@ public class Computer : MonoBehaviour, IInteractable
         dialog.StartDialog();
         dialog.onDialogComplete += () =>
         {
-            sceneSwitch.SwitchScene("Jigsaw");
+            sceneSwitch.SwitchScene("JigsawScene");
         };
         AddCompletedMission addCompletedMission = FindAddCompletedMissionInScene();
         if (addCompletedMission == null)

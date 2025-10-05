@@ -38,7 +38,7 @@ public class Veggie : MonoBehaviour, IInteractable
         dialog.StartDialog();
         dialog.onDialogComplete += () =>
         {
-            sceneSwitch.SwitchScene("Gameplay");
+            sceneSwitch.SwitchScene("Plants");
         };
         AddCompletedMission addCompletedMission = FindAddCompletedMissionInScene();
         if (addCompletedMission == null)

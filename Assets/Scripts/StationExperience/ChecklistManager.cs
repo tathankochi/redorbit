@@ -82,7 +82,7 @@ public class ChecklistManager : MonoBehaviour
     {
         if (IsAllMissionsCompleted())
         {
-            Debug.Log("All missions completed!");
+            // Debug.Log("All missions completed!");
             finishGameButton.SetActive(true);
         }
     }

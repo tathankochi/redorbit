@@ -71,13 +71,13 @@ public class ConnectionManager : MonoBehaviour
             float distance = Vector3.Distance(thisConnector.transform.position, connector.transform.position);
             if (distance < 0.5f)
             {
-                Debug.Log("1Connector position: " + connector.transform.position);
-                Debug.Log("Collision detected between connectors");
+                // Debug.Log("1Connector position: " + connector.transform.position);
+                // Debug.Log("Collision detected between connectors");
                 // Get the module of connector
                 Module connectorModule = connector.GetComponentInParent<Module>();
                 if (connectorModule != null)
                 {
-                    Debug.Log("Connector module found: " + connectorModule.name);
+                    // Debug.Log("Connector module found: " + connectorModule.name);
                 }
                 else
                 {
