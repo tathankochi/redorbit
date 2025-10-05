@@ -40,7 +40,6 @@ public class Starter : MonoBehaviour
 
         foreach (var item in data.items)
         {
-            Debug.Log("Loading item: " + item.prefabName + " at position: " + item.position);
             // Find the prefab by name
             GameObject prefab = FindPrefabByName(item.prefabName);
             if (prefab == null)
@@ -52,24 +51,18 @@ public class Starter : MonoBehaviour
             // Instantiate the tilemap at the saved position as a child of the Grid gameObject
             if (prefab.GetComponent<Tilemap>() != null)
             {
-                Debug.Log("Instantiating tilemap " + item.prefabName);
-                // check if there is a game object named "Grid" in the scene
-                if (GameObject.Find("Grid") == null)
-                {
-                    Debug.LogError("No GameObject named 'Grid' found in the scene. Please add one to parent the tilemaps.");
-                    continue;
-                }
+                // Debug.Log("Instantiating tilemap " + item.prefabName);
                 Instantiate(prefab, item.position, Quaternion.identity, GameObject.Find("Grid").transform);
                 Module[] sceneModules = FindObjectsByType<Module>(FindObjectsSortMode.None);
-                Debug.Log("Current tilemap: " + prefab.name);
+                // Debug.Log("Current tilemap: " + prefab.name);
                 foreach (var module in sceneModules)
                 {
-                    Debug.Log("Checking module " + module.name + " for tilemap assignment");
-                    Debug.Log("Looking for tilemap named: " + "Tilemap_" + module.name);
+                    // Debug.Log("Checking module " + module.name + " for tilemap assignment");
+                    // Debug.Log("Looking for tilemap named: " + "Tilemap_" + module.name);
                     if (prefab.name + "(Clone)" == "Tilemap_" + module.name)
                     {
                         module.moduleTilemap = prefab.GetComponent<Tilemap>();
-                        Debug.Log("Assigned tilemap to module " + module.name);
+                        // Debug.Log("Assigned tilemap to module " + module.name);
                         break;
                     }
                 }
@@ -83,7 +76,7 @@ public class Starter : MonoBehaviour
             // Assign the tilemap to the module's tilemap if it has the same name
             // find list of modules in the scene
 
-            Debug.Log("Instantiated " + item.prefabName + " at " + item.position);
+            // Debug.Log("Instantiated " + item.prefabName + " at " + item.position);
         }
     }
 

@@ -197,6 +197,6 @@ public class GameManager : MonoBehaviour
         }
 
         JsonFileIO.WriteCountJson(jsonFile, n_count);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Plants");
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 }

@@ -64,11 +64,10 @@ public class SaveManager : MonoBehaviour
             Vector3 position = item.transform.position;
             data.items.Add(new SaveData.PlacedData()
             {
-                // remove (Clone) from the name
-                prefabName = item.name.Replace("(Clone)", "").Trim(),
+                prefabName = item.name,
                 position = position
             });
-            Debug.Log("Saved " + item.name + " at " + position);
+            Debug.Log("Saved furniture: " + item.name + " at position: " + position);
         }
         var json = JsonUtility.ToJson(data, true);
         System.IO.File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);

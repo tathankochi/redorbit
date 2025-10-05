@@ -97,7 +97,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7683354766974507003}
   - component: {fileID: 1091118934470482919}
-  - component: {fileID: 7709302064962059698}
   m_Layer: 0
   m_Name: Veggie
   m_TagString: Furniture
@@ -167,16 +166,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.28, y: 1.74}
   m_EdgeRadius: 0
---- !u!114 &7709302064962059698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5558094002044303343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecb781f456f384896a5bcfc33fd21276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneSwitch: {fileID: 0}

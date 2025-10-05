@@ -26,7 +26,7 @@ public class SpriteChanger : MonoBehaviour
          if (Input.GetKeyDown(KeyCode.P))
         {
             
-             UnityEngine.SceneManagement.SceneManager.LoadScene("PipeGame");
+             UnityEngine.SceneManagement.SceneManager.LoadScene(1);
         }
     }
 
