@@ -15,7 +15,6 @@ MonoBehaviour:
   missionDescriptions:
   - Interact with the Arcade
   - Interact with your computer
-  - Interact with the ElectrolysisMachine
-  - Interact with the Locker
-  - Interact with the WaterRecylingSystem
-  - Interact with the Solid Fuel Oxygen Generator
+  - Interact with the Toilet
+  - Interact with the Crew Quarter
+  - Interact with the Veggie

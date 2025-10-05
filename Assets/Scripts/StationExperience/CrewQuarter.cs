@@ -4,7 +4,7 @@ public class CrewQuarter : MonoBehaviour, IInteractable
 {
     public void Interact()
     {
-        Debug.Log("Interacted with Water Recycling Machine");
+        Debug.Log("Interacted with the Crew Quarter");
         Dialog dialog = FindDialogInScene();
         if (dialog == null)
         {
@@ -15,9 +15,10 @@ public class CrewQuarter : MonoBehaviour, IInteractable
         dialog.ResetDialog();
         dialog.gameObject.SetActive(true);
         dialog.dialogLines = new string[] {
-            "You found a water recycling machine!",
-            "The system converts urine, moisture from the air, and water from the air conditioner into clean, drinkable water.",
-            " NASA has a famous joke: �Today�s coffee is tomorrow�s coffee.� ",
+            "You found a crew quarter!",
+            "They are small private cabins where astronauts sleep, rest, and have some personal time.",
+            "Each crew member has a compact booth about the size of a phone booth, equipped with a sleeping bag attached to the wall, air ventilation, lighting controls, and a laptop for communication or entertainment. ",
+            "Despite their size, these quarters provide a bit of comfort and privacy in the microgravity environment of space.",
             "Press SPACE to continue ..."
         };
         dialog.StartDialog();
@@ -27,7 +28,7 @@ public class CrewQuarter : MonoBehaviour, IInteractable
             Debug.LogError("AddCompletedMission component not found in the scene.");
             return;
         }
-        addCompletedMission.MarkMissionComplete("Interact with the WaterRecylingSystem");
+        addCompletedMission.MarkMissionComplete("Interact with the Crew Quarter");
         ChecklistManager checklistManager = FindChecklistManagerInScene();
         if (checklistManager == null)
         {

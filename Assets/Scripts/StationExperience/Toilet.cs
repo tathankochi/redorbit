@@ -4,7 +4,7 @@ public class Toilet : MonoBehaviour, IInteractable
 {
     public void Interact()
     {
-        Debug.Log("Interacted with Electrolysis Machine");
+        Debug.Log("Interacted with the Toilet");
         Dialog dialog = FindDialogInScene();
         if (dialog == null)
         {
@@ -15,8 +15,10 @@ public class Toilet : MonoBehaviour, IInteractable
         dialog.ResetDialog();
         dialog.gameObject.SetActive(true);
         dialog.dialogLines = new string[] {
-            "You found an electrolysis machine!",
-            "System use to split into oxygen (which feeds into the cabin atmosphere) and hydrogen (which is either vented or used in the Sabatier reactor).",
+            "You found a toilet",
+            "Toilet in space uses air flow instead of gravity to collect and separate waste. ",
+            "Urine is filtered and recycled into drinking water, while solid waste is stored and later disposed of safely. ",
+            "It's a vital system that keeps the crew healthy and the station clean in microgravity.",
             "Press SPACE to continue ..."
         };
         dialog.StartDialog();
@@ -26,7 +28,7 @@ public class Toilet : MonoBehaviour, IInteractable
             Debug.LogError("AddCompletedMission component not found in the scene.");
             return;
         }
-        addCompletedMission.MarkMissionComplete("Interact with the toilet");
+        addCompletedMission.MarkMissionComplete("Interact with the Toilet");
         ChecklistManager checklistManager = FindChecklistManagerInScene();
         if (checklistManager == null)
         {

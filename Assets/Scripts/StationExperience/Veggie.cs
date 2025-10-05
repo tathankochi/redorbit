@@ -17,7 +17,7 @@ public class Veggie : MonoBehaviour, IInteractable
     }
     public void Interact()
     {
-        Debug.Log("Interacted with Computer");
+        Debug.Log("Interacted with Veggie");
         Dialog dialog = FindDialogInScene();
         if (dialog == null)
         {
@@ -30,9 +30,10 @@ public class Veggie : MonoBehaviour, IInteractable
         dialog.ResetDialog();
         dialog.gameObject.SetActive(true);
         dialog.dialogLines = new string[] {
-            "You found your computer!",
-            "Astronauts use their computers for work.",
-            "They also use them for entertainment",
+            "You found your veggie!",
+            "Veggie is a plant growth system designed to grow fresh vegetables in microgravity.",
+            "It provides light, water, and nutrients to plants, allowing astronauts to grow and eat crops like lettuce, radishes, and zinnias.",
+            "Veggie helps study how plants adapt to space and supports future long-duration missions by producing fresh food onboard.",
             "Press SPACE to continue ..."
         };
         dialog.StartDialog();
@@ -46,7 +47,7 @@ public class Veggie : MonoBehaviour, IInteractable
             Debug.LogError("AddCompletedMission component not found in the scene.");
             return;
         }
-        addCompletedMission.MarkMissionComplete("Interact with your computer");
+        addCompletedMission.MarkMissionComplete("Interact with the Veggie");
         ChecklistManager checklistManager = FindChecklistManagerInScene();
         if (checklistManager == null)
         {

@@ -41,7 +41,11 @@ MonoBehaviour:
     <ID>k__BackingField: 6
     <Prefab>k__BackingField: {fileID: 4006568770645415191, guid: 9ab9e760ace9b4ad7911869ea994581e, type: 3}
     <Size>k__BackingField: {x: 2, y: 2}
-  - <Name>k__BackingField: Plants
+  - <Name>k__BackingField: Toilet
     <ID>k__BackingField: 7
-    <Prefab>k__BackingField: {fileID: 6075093240546100071, guid: 122af96cb87974541a968ff562920703, type: 3}
+    <Prefab>k__BackingField: {fileID: 3661279953247298552, guid: 1d68217d6dba641a2b65754f89512ddb, type: 3}
+    <Size>k__BackingField: {x: 2, y: 2}
+  - <Name>k__BackingField: Crew Quarter
+    <ID>k__BackingField: 8
+    <Prefab>k__BackingField: {fileID: 5361367565999677032, guid: b3e8143bc7ac34472a993499aad0637d, type: 3}
     <Size>k__BackingField: {x: 2, y: 2}
