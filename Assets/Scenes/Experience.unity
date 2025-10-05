@@ -648,6 +648,8 @@ MonoBehaviour:
   - {fileID: 5028507753404275132, guid: 505a7ff2a1fe6b844a2be7eaecb02eb2, type: 3}
   - {fileID: 4006568770645415191, guid: 9ab9e760ace9b4ad7911869ea994581e, type: 3}
   - {fileID: 8054084173061757531, guid: 4e77b6518d1bd2a4cae99c1ca41af6fa, type: 3}
+  - {fileID: 8054084173061757531, guid: 4e77b6518d1bd2a4cae99c1ca41af6fa, type: 3}
+  - {fileID: 6075093240546100071, guid: 122af96cb87974541a968ff562920703, type: 3}
   tilemaps:
   - {fileID: 7514333657772663179, guid: 32496978ee8f04d27b52267d6de11068, type: 3}
   - {fileID: 5180107585474981718, guid: 3776c7decfdf94b5ab012dcc17a90ec5, type: 3}
