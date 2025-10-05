@@ -31,7 +31,7 @@ public class Computer : MonoBehaviour, IInteractable
         dialog.gameObject.SetActive(true);
         dialog.dialogLines = new string[] {
             "You found your computer!",
-            "Astronauts use their computers for work.",
+            "Computers play a crucial role in controlling systems, managing telemetry, and supporting crew operations. ",
             "They also use them for entertainment",
             "Press SPACE to continue ..."
         };
