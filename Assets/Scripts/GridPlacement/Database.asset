@@ -21,6 +21,7 @@ MonoBehaviour:
     <ID>k__BackingField: 1
     <Prefab>k__BackingField: {fileID: 5558094002044303343, guid: fb971f688072947f78077974f721778a, type: 3}
     <Size>k__BackingField: {x: 2, y: 2}
+<<<<<<< Updated upstream
   - <Name>k__BackingField: ElectrolysisMachine
     <ID>k__BackingField: 2
     <Prefab>k__BackingField: {fileID: 6457353406237758582, guid: 3143763c4040ebe479be4e4a429b5fa2, type: 3}
@@ -45,3 +46,13 @@ MonoBehaviour:
     <ID>k__BackingField: 7
     <Prefab>k__BackingField: {fileID: 6075093240546100071, guid: 122af96cb87974541a968ff562920703, type: 3}
     <Size>k__BackingField: {x: 2, y: 2}
+=======
+  - <Name>k__BackingField: 
+    <ID>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 0}
+    <Size>k__BackingField: {x: 0, y: 0}
+  - <Name>k__BackingField: 
+    <ID>k__BackingField: 0
+    <Prefab>k__BackingField: {fileID: 0}
+    <Size>k__BackingField: {x: 0, y: 0}
+>>>>>>> Stashed changes
