@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class SFOG : MonoBehaviour, IInteractable
+public class CrewQuarter : MonoBehaviour, IInteractable
 {
     public void Interact()
     {
-        Debug.Log("Interacted with SFOG");
+        Debug.Log("Interacted with Water Recycling Machine");
         Dialog dialog = FindDialogInScene();
         if (dialog == null)
         {
@@ -15,10 +15,9 @@ public class SFOG : MonoBehaviour, IInteractable
         dialog.ResetDialog();
         dialog.gameObject.SetActive(true);
         dialog.dialogLines = new string[] {
-            "You found a solid fuel oxygen generator",
-            "This is is a chemical �oxygen candle� used as a backup oxygen source on the space habitat ",
-            "A replaceable canister containing a chlorate/perchlorate-based mixture is ignited, the hot decomposition releases oxygen gas for the station atmosphere (one cartridge can supply roughly one person for ~24 hours).  ",
-            "The SFOG is kept as an emergency/backup system because, while effective, its ignition/combustion process has safety risks (notably fire incidents on Mir), so its use and cartridges are carefully controlled.",
+            "You found a water recycling machine!",
+            "The system converts urine, moisture from the air, and water from the air conditioner into clean, drinkable water.",
+            " NASA has a famous joke: �Today�s coffee is tomorrow�s coffee.� ",
             "Press SPACE to continue ..."
         };
         dialog.StartDialog();
@@ -28,7 +27,7 @@ public class SFOG : MonoBehaviour, IInteractable
             Debug.LogError("AddCompletedMission component not found in the scene.");
             return;
         }
-        addCompletedMission.MarkMissionComplete("Interact with the Solid Fuel Oxygen Generator");
+        addCompletedMission.MarkMissionComplete("Interact with the WaterRecylingSystem");
         ChecklistManager checklistManager = FindChecklistManagerInScene();
         if (checklistManager == null)
         {
