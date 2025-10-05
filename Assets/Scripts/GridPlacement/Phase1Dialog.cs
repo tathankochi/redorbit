@@ -10,13 +10,10 @@ public class Phase1Dialog : MonoBehaviour
         dialog.ResetDialog();
         dialog.dialogLines = new string[] {
             "Press SPACE to continue ...",
-            "Humans are closer than ever to colonizing Mars.",
-            "The journey to Mars was not like the trip to the Moon.",
-            "Communication delay is over twenty minutes each way.",
-            "This means that astronauts on Mars will have to be more autonomous.",
-            "You are given a job to design a space station orbiting Mars.",
-            "This is a step towards building a permanent base on Mars.",
-            "You will start with basic modules and connectors."
+            "You will start with basic modules and connectors.",
+            "Connect modules to create a functional space station.",
+            "Remember, each module has specific connection points.",
+            "Plan your layout carefully to ensure the design is at least reasonable.",
         };
         dialog.StartDialog();
     }

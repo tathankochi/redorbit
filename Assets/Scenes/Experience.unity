@@ -1755,9 +1755,25 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 5339143143917628044, guid: 85abaa81f59104e49aaaca1c1be2e5a3, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5339143143917628044, guid: 85abaa81f59104e49aaaca1c1be2e5a3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 6250014427381329469, guid: 85abaa81f59104e49aaaca1c1be2e5a3, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615682804812825723, guid: 85abaa81f59104e49aaaca1c1be2e5a3, type: 3}
+      propertyPath: m_Radius
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615682804812825723, guid: 85abaa81f59104e49aaaca1c1be2e5a3, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.32
       objectReference: {fileID: 0}
     - target: {fileID: 8824148033645454007, guid: 85abaa81f59104e49aaaca1c1be2e5a3, type: 3}
       propertyPath: m_LocalPosition.x
