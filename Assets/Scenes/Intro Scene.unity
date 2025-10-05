@@ -578,6 +578,7 @@ MonoBehaviour:
   textComponent: {fileID: 1004068653}
   lines:
   - Click to continue.
+  - Feel free to reload the game if you encounter any problem
   - 'Since the dawn of time... '
   - Mankind has always gazed upon the trillions of cosmic bodies shining brightly
     across the vast expanse of space.
