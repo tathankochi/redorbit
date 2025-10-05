@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class WaterRecylingSystem : MonoBehaviour, IInteractable
+public class Electrolysismachine : MonoBehaviour, IInteractable
 {
     public void Interact()
     {
-        Debug.Log("Interacted with Water Recycling Machine");
+        Debug.Log("Interacted with Electrolysis Machine");
         Dialog dialog = FindDialogInScene();
         if (dialog == null)
         {
@@ -15,9 +15,8 @@ public class WaterRecylingSystem : MonoBehaviour, IInteractable
         dialog.ResetDialog();
         dialog.gameObject.SetActive(true);
         dialog.dialogLines = new string[] {
-            "You found a water recycling machine!",
-            "The system converts urine, moisture from the air, and water from the air conditioner into clean, drinkable water.",
-            " NASA has a famous joke: “Today’s coffee is tomorrow’s coffee.” ",
+            "You found an electrolysis machine!",
+            "System use to split into oxygen (which feeds into the cabin atmosphere) and hydrogen (which is either vented or used in the Sabatier reactor).",
             "Press SPACE to continue ..."
         };
         dialog.StartDialog();
@@ -27,7 +26,7 @@ public class WaterRecylingSystem : MonoBehaviour, IInteractable
             Debug.LogError("AddCompletedMission component not found in the scene.");
             return;
         }
-        addCompletedMission.MarkMissionComplete("Interact with the WaterRecyclingSystem");
+        addCompletedMission.MarkMissionComplete("Interact with the ElectrolysisMachine");
         ChecklistManager checklistManager = FindChecklistManagerInScene();
         if (checklistManager == null)
         {

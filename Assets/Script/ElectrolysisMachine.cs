@@ -4,7 +4,7 @@ public class ElectrolysisMachine : MonoBehaviour, IInteractable
 {
     public void Interact()
     {
-        Debug.Log("Interacted with Working Table");
+        Debug.Log("Interacted with Electrolysis Machine");
         Dialog dialog = FindDialogInScene();
         if (dialog == null)
         {
@@ -15,8 +15,8 @@ public class ElectrolysisMachine : MonoBehaviour, IInteractable
         dialog.ResetDialog();
         dialog.gameObject.SetActive(true);
         dialog.dialogLines = new string[] {
-            "You found a working table!",
-            "You can use this to do experiments.",
+            "You found an Electrolysis Machine!",
+            "System use to split into oxygen (which feeds into the cabin atmosphere) and hydrogen (which is either vented or used in the Sabatier reactor). ",
             "Press SPACE to continue ..."
         };
         dialog.StartDialog();
@@ -26,7 +26,7 @@ public class ElectrolysisMachine : MonoBehaviour, IInteractable
             Debug.LogError("AddCompletedMission component not found in the scene.");
             return;
         }
-        addCompletedMission.MarkMissionComplete("Interact with the working table");
+        addCompletedMission.MarkMissionComplete("Interact with the ElectrolysisMachine");
         ChecklistManager checklistManager = FindChecklistManagerInScene();
         if (checklistManager == null)
         {
