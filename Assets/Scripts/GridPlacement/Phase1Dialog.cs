@@ -12,6 +12,7 @@ public class Phase1Dialog : MonoBehaviour
             "Press SPACE to continue ...",
             "You will start with basic modules and connectors.",
             "Connect modules to create a functional space station.",
+            "You have to connect surrounding modules to the core module.",
             "Remember, each module has specific connection points.",
             "Plan your layout carefully to ensure the design is at least reasonable.",
         };
