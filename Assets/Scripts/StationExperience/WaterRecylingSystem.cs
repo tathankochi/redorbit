@@ -17,7 +17,7 @@ public class WaterRecylingSystem : MonoBehaviour, IInteractable
         dialog.dialogLines = new string[] {
             "You found a water recycling machine!",
             "The system converts urine, moisture from the air, and water from the air conditioner into clean, drinkable water.",
-            " NASA has a famous joke: “Today’s coffee is tomorrow’s coffee.” ",
+            " NASA has a famous joke: ï¿½Todayï¿½s coffee is tomorrowï¿½s coffee.ï¿½ ",
             "Press SPACE to continue ..."
         };
         dialog.StartDialog();
@@ -27,7 +27,7 @@ public class WaterRecylingSystem : MonoBehaviour, IInteractable
             Debug.LogError("AddCompletedMission component not found in the scene.");
             return;
         }
-        addCompletedMission.MarkMissionComplete("Interact with the WaterRecyclingSystem");
+        addCompletedMission.MarkMissionComplete("Interact with the WaterRecylingSystem");
         ChecklistManager checklistManager = FindChecklistManagerInScene();
         if (checklistManager == null)
         {

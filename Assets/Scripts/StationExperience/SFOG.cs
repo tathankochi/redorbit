@@ -16,7 +16,7 @@ public class SFOG : MonoBehaviour, IInteractable
         dialog.gameObject.SetActive(true);
         dialog.dialogLines = new string[] {
             "You found a solid fuel oxygen generator",
-            "This is is a chemical “oxygen candle” used as a backup oxygen source on the space habitat ",
+            "This is is a chemical ï¿½oxygen candleï¿½ used as a backup oxygen source on the space habitat ",
             "A replaceable canister containing a chlorate/perchlorate-based mixture is ignited, the hot decomposition releases oxygen gas for the station atmosphere (one cartridge can supply roughly one person for ~24 hours).  ",
             "The SFOG is kept as an emergency/backup system because, while effective, its ignition/combustion process has safety risks (notably fire incidents on Mir), so its use and cartridges are carefully controlled.",
             "Press SPACE to continue ..."

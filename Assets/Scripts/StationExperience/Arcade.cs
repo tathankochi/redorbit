@@ -50,7 +50,7 @@ public class Arcade : MonoBehaviour, IInteractable
             Debug.LogError("AddCompletedMission component not found in the scene.");
             return;
         }
-        addCompletedMission.MarkMissionComplete("Interact with your computer");
+        addCompletedMission.MarkMissionComplete("Interact with the Arcade");
         
         ChecklistManager checklistManager = FindChecklistManagerInScene();
         if (checklistManager == null)
