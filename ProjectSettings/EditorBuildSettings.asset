@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro Scene.unity
     guid: c28f84fdb820deb43a5ccf57fe1fa9db
+  - enabled: 1
+    path: Assets/Scenes/Nhi/PIpeGame.unity
+    guid: c1c7a4b68656d4879983e8c6e36f1f70
+  - enabled: 1
+    path: Assets/Scenes/Nhi/Plants.unity
+    guid: 73127a214351c4f9d935a2d4ba289e07
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
