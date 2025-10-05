@@ -905,10 +905,6 @@ RectTransform:
 <<<<<<< Updated upstream
   m_AnchoredPosition: {x: 874.05237, y: 397.465}
   m_SizeDelta: {x: 90.999, y: 81.294}
-=======
-  m_AnchoredPosition: {x: 863.218, y: 397.465}
-  m_SizeDelta: {x: 112.668, y: 81.294}
->>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &910121797
 MonoBehaviour:
