@@ -41,3 +41,7 @@ MonoBehaviour:
     <ID>k__BackingField: 6
     <Prefab>k__BackingField: {fileID: 4006568770645415191, guid: 9ab9e760ace9b4ad7911869ea994581e, type: 3}
     <Size>k__BackingField: {x: 2, y: 2}
+  - <Name>k__BackingField: Plants
+    <ID>k__BackingField: 7
+    <Prefab>k__BackingField: {fileID: 6075093240546100071, guid: 122af96cb87974541a968ff562920703, type: 3}
+    <Size>k__BackingField: {x: 2, y: 2}
