@@ -193,10 +193,19 @@ public class GameManager : MonoBehaviour
         // Kiểm tra nếu n_count vượt quá độ dài của levels thì quay về 0
         if (n_count >= levels.Count)
         {
-            n_count = 0;
-        }
 
-        JsonFileIO.WriteCountJson(jsonFile, n_count);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Plants");
+            n_count = 0;
+            Debug.Log("All levels completed! Restarting from level 0.");
+            JsonFileIO.WriteCountJson(jsonFile, n_count);
+            // Switch to "Experience" scene
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Experience");
+        }
+        else
+        {
+            JsonFileIO.WriteCountJson(jsonFile, n_count);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Plants");
+
+        }
+        
     }
 }
